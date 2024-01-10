@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --primary-bg: #000;
+    --primary-text: #fff;
+    --primary-title: #f5f5f7;
+    --primary-sub: #6e6e73;
+    --primary-link: #2997ff;
+    --secondary-text: #DED2B9;
+}
+
+/* RESET CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+/* Header CSS */
+
+header {
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    height: fit-content;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 10px 0;
+    opacity: 0.8;
+}
+
+header nav ul {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    /* padding: 0 2rem; */
+}
+
+header nav ul li {
+    min-width: fit-content;
+    height: fit-content;
+    padding: 0 15px;
+    cursor: pointer;
+    list-style: none;
+}
+
+/* Main CSS */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.a-sect {
+    text-align: center;
+    position: relative;
+}
+
+.a-sect h1 {
+    color: var(--primary-title);
+    font-size: 65px;
+    line-height: 4rem;
+    letter-spacing: -0.28px;
+}
+
+.a-sect h2 {
+    color: var(--primary-sub);
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: 0.12px;
+    margin-bottom: 1rem;
+}
+
+.a-sect sub {
+    font-size: 18px;
+}
+
+.a-sect a {
+    color: var(--primary-link);
+    text-decoration: none;
+    font-size: 22px;
+    letter-spacing: 0.23px;
+    cursor: pointer;
+}
+
+.a-sect a:hover {
+    text-decoration: underline;
+    scale: 1.05;
+}
+
+.a-sect img {
+    width: 100%;
+    height: auto;
+}
+
+.text-section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.b-sect {
+    position: relative;
+}
+
+.b-sect img {
+    width: 100%;
+    height: auto;
+}
+
+.spirited {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.spirited-names {
+    top: 110px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 60%;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: -0.6px;
+    color: var(--secondary-text);
+}
+
+.spirited-text {
+    color: var(--primary-title);
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+}
+
+.spirited-text p {
+    font-size: 28px;
+    letter-spacing: 0.12px;
+    color: var(--primary-title);
+}
+
+.spirited-text span {
+    font-size: 22px;
+    letter-spacing: 0.25px;
+    color: var(--primary-text);
+}
