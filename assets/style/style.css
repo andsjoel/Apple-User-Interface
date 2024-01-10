@@ -7,6 +7,7 @@
     --primary-sub: #6e6e73;
     --primary-link: #2997ff;
     --secondary-text: #DED2B9;
+    --secondary-title: #1d1d1f;
 }
 
 /* RESET CSS */
@@ -154,4 +155,56 @@ main {
     font-size: 22px;
     letter-spacing: 0.25px;
     color: var(--primary-text);
+}
+
+.c-sect {
+    position: relative;
+}
+
+.c-sect img {
+    width: 100%;
+    height: auto;
+}
+
+.c-sect div {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.c-sect h1 {
+    font-size: 56px;
+    color: var(--secondary-title);
+    letter-spacing: -0.28px;
+}
+
+.c-sect h2 {
+    font-size: 28px;
+    color: var(--secondary-title);
+    letter-spacing: 0.12px;
+}
+
+.c-sect ul {
+    font-size: 22px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-sect a {
+    color: var(--primary-link);
+    text-decoration: none;
+    font-size: 22px;
+    letter-spacing: 0.23px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.c-sect a:hover {
+    text-decoration: underline;
+    scale: 1.05;
 }
