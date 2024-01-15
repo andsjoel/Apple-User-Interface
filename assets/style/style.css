@@ -8,6 +8,7 @@
     --primary-link: #2997ff;
     --secondary-text: #DED2B9;
     --secondary-title: #1d1d1f;
+    --footer-link: #424245;
 }
 
 /* RESET CSS */
@@ -355,53 +356,135 @@ input {
     font-size: 18px;
 }
 
-#item-1:checked ~ .cards #song-5,
-#item-2:checked ~ .cards #song-1,
-#item-3:checked ~ .cards #song-2,
-#item-4:checked ~ .cards #song-3,
-#item-5:checked ~ .cards #song-4 {
+#item-1:checked ~ .cards #img-5,
+#item-2:checked ~ .cards #img-1,
+#item-3:checked ~ .cards #img-2,
+#item-4:checked ~ .cards #img-3,
+#item-5:checked ~ .cards #img-4 {
     transform: translateX(-40%) scale(0.8);
     /* opacity: 0.4; */
     z-index: 1;
 }
 
-#item-1:checked ~ .cards #song-4,
-#item-2:checked ~ .cards #song-5,
-#item-3:checked ~ .cards #song-1,
-#item-4:checked ~ .cards #song-2,
-#item-5:checked ~ .cards #song-3 {
+#item-1:checked ~ .cards #img-4,
+#item-2:checked ~ .cards #img-5,
+#item-3:checked ~ .cards #img-1,
+#item-4:checked ~ .cards #img-2,
+#item-5:checked ~ .cards #img-3 {
     transform: translateX(-70%) scale(0.5);
     opacity: 0.4;
     z-index: 0;
 }
 
-#item-1:checked ~ .cards #song-3,
-#item-2:checked ~ .cards #song-4,
-#item-3:checked ~ .cards #song-5,
-#item-4:checked ~ .cards #song-1,
-#item-5:checked ~ .cards #song-2 {
+#item-1:checked ~ .cards #img-3,
+#item-2:checked ~ .cards #img-4,
+#item-3:checked ~ .cards #img-5,
+#item-4:checked ~ .cards #img-1,
+#item-5:checked ~ .cards #img-2 {
     transform: translateX(70%) scale(0.5);
     opacity: 0.4;
     z-index: 0;
 }
 
-#item-1:checked ~ .cards #song-2,
-#item-2:checked ~ .cards #song-3,
-#item-3:checked ~ .cards #song-4,
-#item-4:checked ~ .cards #song-5,
-#item-5:checked ~ .cards #song-1 {
+#item-1:checked ~ .cards #img-2,
+#item-2:checked ~ .cards #img-3,
+#item-3:checked ~ .cards #img-4,
+#item-4:checked ~ .cards #img-5,
+#item-5:checked ~ .cards #img-1 {
     transform: translateX(40%) scale(0.8);
     /* opacity: 0.4; */
     z-index: 1;
 }
 
-#item-1:checked ~ .cards #song-1,
-#item-2:checked ~ .cards #song-2,
-#item-3:checked ~ .cards #song-3,
-#item-4:checked ~ .cards #song-4,
-#item-5:checked ~ .cards #song-5 {
+#item-1:checked ~ .cards #img-1,
+#item-2:checked ~ .cards #img-2,
+#item-3:checked ~ .cards #img-3,
+#item-4:checked ~ .cards #img-4,
+#item-5:checked ~ .cards #img-5 {
     transform: translateX(0) scale(1);
     opacity: 1;
     z-index: 2;
 }
 
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+footer section div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+footer h3 {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--secondary-title);
+    letter-spacing: -0.12;
+    margin: 12px 0;
+}
+
+footer a {
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--footer-link);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-p {
+    margin-top: 25px;
+    display: flex;
+    font-size: 12px;
+    color: var(--primary-sub);
+    width: 80%;
+    border-bottom: 1px solid var(--primary-sub);
+    padding-bottom: 12px;
+}
+
+.footer-p a {
+    font-size: 12x;
+    color: var(--primary-link);
+    margin: 0 3px;
+}
+
+.footer-link {
+    margin-top: 25px;
+    display: flex;
+    font-size: 12px;
+    color: var(--primary-sub);
+    width: 80%;
+}
+
+.footer-link ul {
+    display: flex;
+    margin: 0 50px;
+}
+
+.footer-link ul a {
+    border-right: 1px solid var(--primary-sub);
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link ul a:last-child {
+    border-right: none;
+}
